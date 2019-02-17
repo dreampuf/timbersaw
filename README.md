@@ -1,7 +1,20 @@
 # HTTP log monitoring console program
 
-  
 ![Program Structure](timbersaw.png)
+
+```go
+go run cmd/timbersaw/timbersaw.go -help
+Usage of timbersaw:
+  -path string
+    	Path of Logs (default "/var/log/nginx/")
+  -rate uint
+    	Refresh Rate of dashboard (default 10)
+  -threshold uint
+    	Alert threshold (default 1200)
+  -window uint
+    	Monitor period (default 120)
+exit status 2
+```
 
 ## Main Features
 
